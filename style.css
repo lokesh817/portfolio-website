@@ -1,0 +1,348 @@
+body{
+    margin: 0px;
+    font-family: sans-serif;
+    font-size: 15px;
+}
+
+/* Body Header */
+
+#body-header {
+    height: 65vh;
+    opacity: 0.8;
+    background-image: url(https://ninjasfiles.s3.amazonaws.com/asset_0000000000000020_1549743985_macbook_mouse.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding-top: 1.2rem;
+}
+
+/* Horizontal Lists */
+
+.horizontal-list {
+    list-style: none;
+    padding-left: 0px;
+    margin: 0px;
+}
+
+.horizontal-list li {
+    display: inline-block;
+    margin: 0px 15px 15px 0px;
+}
+
+
+.horizontal-list li a {
+    color: white;
+    text-decoration: none;
+    
+}
+
+.nav-menu li a{
+    transition: color 0.5s, border-bottom 4s;
+}
+
+.nav-menu li a:hover {
+    color: lightgrey;
+    border-bottom: 1px solid white;
+}
+
+.text-center {
+    text-align: center;
+}
+
+/*Social-container*/
+
+#my-name {
+	font-size: 2rem;
+    letter-spacing: 0.1rem;
+    color: white;
+    font-weight: 700;
+/*    margin-bottom: 0.8rem;*/
+}
+
+/* social-icon*/
+.social-icon li a i{
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 50%;
+}
+.social-icon li a i:hover{
+    box-shadow: 0px 0px 6px 5px rgba(230, 196, 196, 0.3);
+}
+
+/*section*/
+section {
+    display: flex;
+    flex-direction:column ;
+    width: 100%;
+    height: auto;
+    align-items: center;
+}
+section:nth-child(2n+1){
+    background-color: white;
+}
+section:nth-child(2n){
+    background-color: whitesmoke;
+}
+
+.mb75px{
+    margin-bottom: 75px;
+}
+.section-heading{
+    width: auto;
+    padding: 20px 10px 10px;
+    margin: 10px auto;
+    font-weight: 400;
+}
+.section-heading span{
+    font-size:40px;
+    color: #2857a4;
+    display: inline-block;
+    width: auto;
+    padding-top:10px;
+    margin: 10px auto;
+    margin-right: 0.5rem;
+}
+/*about section*/
+#about{
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+#my-image{
+    height:12rem ;
+    width:12rem ;
+    margin: auto;
+    margin-top: -6rem;
+
+}
+#my-image img{
+    box-shadow: 0px 0px 9px 9px rgba(230, 196, 196, 0.3);
+    border: 4px solid white;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+}
+#about p{
+    margin: 50px 200px 20px;
+    color: grey;
+}
+b{
+    color: blue;
+}
+/*skills*/
+
+.skills-Display{
+    width: 70%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+.skill-progress{
+    width: 7rem;
+    min-width: 180px;
+    height: 1.8rem;
+    border: 0.5px solid grey;
+    border-radius: 1.1rem;
+    color: white;
+    background-color: lightgrey;
+    margin: 2rem 1rem;
+    
+}
+.skill-progress>div{
+    border-radius: 25px 0 0 25px;
+    box-shadow: 4px 0px 4px 0px grey;
+    font-size: 0.8rem;
+
+}
+.skill-progress div span{
+    height: auto;
+    width: auto;
+    font-size: 1rem;
+    padding-left:10px;
+    line-height: 1.4rem;
+}
+.eighty-five{
+    width: 85%;
+    height: inherit;
+    background-color: blue;
+}
+.ninety{
+    width: 90%;
+    height: inherit;
+    background-color: green;   
+}
+.seventy{
+    width: 70%;
+    height: inherit;
+    background-color: hotpink;   
+}
+.seventy-five{
+    width: 75%;
+    height: inherit;
+    background-color: #006666;   
+}
+.seventy-eight{
+    width: 78%;
+    height: inherit;
+    background-color: magenta;   
+}
+.eighty-two{
+    width: 82%;
+    height: inherit;
+    background-color: skyblue;   
+}
+/*Portfolio*/
+.Portfolio-Display{
+    width: 70%;
+    min-width: 100px;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+}
+.Project-image{
+    position: relative;
+    line-height: 3.5rem;
+}
+
+.Project-image >img{
+    width: 250px;
+    height: 230px;
+}
+.project-name1{
+    position: absolute;
+    top: 25%;
+    left: 10%;
+    right: 10%;
+    opacity: 0;
+    font-size: 1rem;
+}
+.Project-image:hover img{
+    opacity: 0.4;
+    background-color: darkgrey;
+    border-radius: 25px;
+    border: 1px solid white;
+    box-shadow: 0px 0px 6px 5px lightgreen;
+
+}
+.Project-image:hover .project-name1{
+    opacity: 1; 
+    color: royalblue;  
+}
+
+/*contacts*/
+#contact{
+    background-image: linear-gradient(to top right,blue,purple 60%);
+}
+#contact-container{
+    width: 80%;
+}
+.white-text,.white-text span{
+    color: white;
+}
+#contact-info p{
+    font-size: 0.7rem;
+    
+}
+.contact-div{
+    margin: 20px ;
+    display: inline-block;
+    width: 45%;
+}
+#contact-form input{
+    background: none;
+    color: lightgrey;
+    line-height: 1rem;
+    border: none;
+    
+}
+::placeholder{
+    color: grey;
+}
+button[type="submit"]{
+    
+    background: none;
+    border:1px solid white;
+    color: white;
+    margin-left: 30%;
+    margin-top: 5%;
+}
+/*Work experience*/
+#timeline{
+    width: 75%;
+    position: relative;
+}
+.timeline-divider{
+    position: absolute;
+    height: 85%;
+    width: 0;
+    border: 1.5px dashed lightblue;
+    
+    top: 10%;
+    left: 50%;
+}
+.timeline-traveller{
+    position: sticky;
+    top: 25%;
+    color: #2857a4;
+    transform: rotate(90deg);
+    z-index: 2;
+}
+.timeline-box:nth-child(2n+1)::after{
+    content: '';
+    position: absolute;
+    top: 27%;
+    right: -22.5%;
+    border-radius: 50%;
+    background-color: grey;
+    z-index: 1;
+    height: 0.5rem;
+    width: 0.5rem;
+}
+.timeline-box:nth-child(2n)::after{
+    content: '';
+    position: absolute;
+    top: 27%;
+    left: -17.25%;
+    border-radius: 50%;
+    background-color: grey;
+    z-index: 1;
+    height: 0.5rem;
+    width: 0.5rem;
+}
+.timeline-box{
+    
+    position: relative;
+    width: 40%;
+    margin: 15px;
+    min-height: 150px;
+}
+.timeline-box:nth-child(2n){
+    left: 55%;
+}
+.timeline-box:nth-child(2n+1) .timeline-header:nth-child(2n+1){
+    text-align: right;
+}
+.timeline-header p,h3,h4{
+    margin: 0;
+    padding: 0;
+}
+.timeline-header h3{
+    color: #2857a4;
+    font-size: 1.3rem;
+}
+.timeline-header h4{
+    color: orange;
+    font-size: 1.1rem;
+}
+.timeline-header p{
+    color: grey;
+    font-size: 0.9rem;
+}
+.timeline-main{
+    color: grey;
+    font-size: 0.8rem;
+}
